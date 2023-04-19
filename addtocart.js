@@ -11,10 +11,10 @@ rows.forEach(row => {
 
 // Update the subtotal for a row
 function updateSubtotal(row) {
-	const price = parseFloat(row.querySelector('td:nth-child(2)').textContent.replace('$', ''));
+	const price = parseFloat(row.querySelector('td:nth-child(2)').textContent.replace('#', ''));
 	const quantity = parseInt(row.querySelector('input').value);
 	const subtotal = price * quantity;
-	row.querySelector('td:nth-child(4)').textContent = '$' + subtotal.toFixed(2);
+	row.querySelector('td:nth-child(4)').textContent = '#' + subtotal.toFixed(2);
 	
 	updateTotal();
 }
@@ -22,7 +22,7 @@ function updateSubtotal(row) {
 // Update the total
 function updateTotal() {
 	const subtotals = Array.from(rows).map(row => {
-		return parseFloat(row.querySelector('td:nth-child(4)').textContent.replace('$', ''));
+		return parseFloat(row.querySelector('td:nth-child(4)').textContent.replace('#', ''));
 	});
 	const total = subtotals.reduce((sum, value) => sum + value, 0);
-	document.querySelector('tfoot td:last-child').textContent = '$' + total.toFixed
+	document.querySelector('tfoot td:last-child').textContent = '#' + total.toFixed}
