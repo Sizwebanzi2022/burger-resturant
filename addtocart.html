@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADD TO CART</title>
+    <link rel="stylesheet" href="addtocart.css">
+</head>
+<body>
+    <main>
+        <section id="sec">
+            <h1>My Cart</h1>
+            <p id="tota" value="100"></p>
+            <table class="table">
+                <thead class="thead">
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th colspan="3">Quantity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="lineF" class="lineF">
+                        <td>Fanta</td>
+                        <td class="price"><span>$</span>100</td>
+                        <td><button id="add" class="add">+</button></td>
+                        <td class="Quant" id="tot"></td>
+                        <td><button id="sub">-</button></td>
+                    </tr>
+                    <tr id="lineT">
+                        <td>Coke</td>
+                        <td class="price"><span>$</span>100</td>
+                        <td><button id="add1" class="add">+</button></td>
+                        <td class="Quant" id="tot1"></td>
+                        <td><button id="sub1">-</button></td>
+                    </tr>
+                    <tr id="lineTr">
+                        <td>Sprite</td>
+                        <td class="price"><span>$</span>100</td>
+                        <td><button id="add2" class="add">+</button></td>
+                        <td class="Quant" id="tot2"></td>
+                        <td><button id="sub2">-</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" id="qtyTotal">TOTAL: $0.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div id="bile" style="font-size: 12px;">
+                <h2 id="gats"></h2>
+                <h2 id="hMany"></h2>
+            </div>
+            <div class="car">
+                <button id="count">Add</button>
+                <h1 id="hi" class="hin">Coke</h1>
+            </div>
+            <div id="car"></div>
+        </section>
+    </main>
+    <script src="addtocart.js"></script>
+    </body>
+    </html>
