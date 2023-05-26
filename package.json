@@ -1,0 +1,29 @@
+{
+  "name": "burger-resturant",
+  "version": "1.0.0",
+  "description": "Four point burger resturant",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dreezy00007/burger-resturant.git"
+  },
+  "author": "pablo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dreezy00007/burger-resturant/issues"
+  },
+  "homepage": "https://github.com/Dreezy00007/burger-resturant#readme",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-ejs-layouts": "^2.5.1",
+    "express-handlebars": "^7.0.7",
+    "nodemon": "^2.0.22",
+    "stripe": "^12.1.1"
+  }
+}
